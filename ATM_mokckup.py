@@ -100,4 +100,4 @@ while option == 1:
         login()
 
     elif option == 2:
-        print('Thank you for banking with us!')
+        print('Thank you for banking with us!!')
