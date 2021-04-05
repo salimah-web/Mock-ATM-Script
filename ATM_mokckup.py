@@ -1,6 +1,6 @@
 from datetime import datetime
 from random import randint
-database= {4636547679:['salima','sally',2000],4523418944:['bilal','billy',6000]}
+database= {4636547679:['Salima Omari','sally',2000],4523418944:['Bilal Omari','billy',6000]}
 
 
 def generate_account_number():
@@ -62,8 +62,8 @@ def register():
     print(datetime.now())
     print('REGISTRATION')
     details=[]
-    name= input('Full name:\n>>>')
-    password = input('Password?\n>>>')
+    name= input('Enter your full name:\n>>>')
+    password = input('Enter your password:\n>>>')
     account_balance=0.0
     
     details.append(name)
@@ -71,10 +71,9 @@ def register():
     details.append(account_balance)
     print(details)
     Account_number=generate_account_number()
-    print(Account_number)
     print(f'You have succesfully registered to our bank, Your account number is {Account_number} ')
     database[int(Account_number)]=details
-    print(database)
+    #print(database)
     
 
 def homepage():
