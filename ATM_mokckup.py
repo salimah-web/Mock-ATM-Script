@@ -59,7 +59,13 @@ def login():
         bank_operations(account_no)
     else:
         print('invalid account number or password')
-        login()
+        option = int(input('Enter 1 to try again\nEnter 2 to exit\n>>>'))
+        if option == 1:
+            login()
+        elif option ==2:
+            exit()
+        else:
+            exit()   #This is here as a safe option for users
 
 def exit ():
     option = 1
